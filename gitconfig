@@ -1,0 +1,21 @@
+[include]
+  path = ~/.gitconfig.local
+[alias]
+  almost = diff --cached
+  co = checkout
+  cob = checkout -b
+  com = checkout master
+  cod = checkout develop
+  fo = fetch origin
+  mmm = commit -m
+  s = status
+  ff = diff --color
+  ffom = diff origin/master --color
+  ffa = add -p
+  bae = rebase -i
+  lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  su = submodule update --init --recursive
+  llom = pull origin master
+  llod = pull origin develop
+  llo = pull origin
+  sso = push origin
